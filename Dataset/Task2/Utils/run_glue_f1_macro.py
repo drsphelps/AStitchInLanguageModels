@@ -503,7 +503,7 @@ def main():
         logger.info("*** Test ***")
 
         # Loop to handle MNLI double evaluation (matched, mis-matched)
-        tasks = [data_args.task_name]
+        tasks = [training_args.seed]
         test_datasets = [test_dataset]
         if data_args.task_name == "mnli":
             tasks.append("mnli-mm")
